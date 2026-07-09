@@ -7,6 +7,8 @@ import '../screens/lessons/lesson_detail_screen.dart';
 import '../screens/lessons/lesson_history_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../screens/student/student_dashboard_screen.dart';
+import '../screens/student/student_detail_screen.dart';
+import '../screens/student/student_list_screen.dart';
 
 class AppRoutes {
   const AppRoutes._();
@@ -18,6 +20,8 @@ class AppRoutes {
   static const lessonDetail = '/lesson-detail';
   static const lessonHistory = '/lesson-history';
   static const settings = '/settings';
+  static const studentList = '/students';
+  static const studentDetail = '/students/detail';
 
   static Map<String, WidgetBuilder> get routes {
     return {
@@ -28,6 +32,8 @@ class AppRoutes {
       lessonDetail: (context) => const LessonDetailScreen(),
       lessonHistory: (context) => const LessonHistoryScreen(),
       settings: (context) => const SettingsScreen(),
+      studentList: (context) => const StudentListScreen(),
+      studentDetail: (context) => const StudentDetailScreen(),
     };
   }
 }

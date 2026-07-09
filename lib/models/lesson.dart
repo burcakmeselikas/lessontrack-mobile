@@ -21,6 +21,7 @@ class Lesson {
     required this.status,
     required this.countsTowardPackage,
     this.repeatsWeekly = false,
+    this.needsConfirmation = false,
     this.cancellationReason,
   });
 
@@ -32,5 +33,6 @@ class Lesson {
   final LessonStatus status;
   final bool countsTowardPackage;
   final bool repeatsWeekly;
+  final bool needsConfirmation;
   final String? cancellationReason;
 }

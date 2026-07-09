@@ -11,8 +11,5 @@ class LessonPackage {
   final int totalLessonCount;
   final int countedLessonCount;
 
-  int get remainingLessonCount {
-    final remaining = totalLessonCount - countedLessonCount;
-    return remaining < 0 ? 0 : remaining;
-  }
+  int get remainingLessonCount => totalLessonCount - countedLessonCount;
 }
